@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gamer Fest ESPE 2027</title>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-body">
+
+  <!-- ===================== HEADER / NAVBAR (RF-01) ===================== -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black border-bottom border-secondary-subtle">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 text-info fw-bold" href="#inicio">
+          <!-- Logo: agregar la ruta en src -->
+          <img src="img/logo.jpg" alt="Logotipo de Gamer Fest ESPE 2027" width="50" height="50">
+          GAMER FEST ESPE 2027
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                aria-expanded="false" aria-label="Abrir o cerrar el menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+            <li class="nav-item"><a class="nav-link" href="#premios">Premios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#auspiciantes">Auspiciantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#inscripcion">Registro</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO (RF-02) ===================== -->
+    <section id="inicio" class="bg-body-tertiary py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+
+          <div class="col-12 col-lg-6 text-center text-lg-start">
+            <h1 class="display-5 fw-bold text-uppercase">¡Gamer Fest ESPE 2027!</h1>
+            <p class="lead text-body-secondary">
+              Juega. Compite. Conecta. El evento gamer universitario que reúne a la comunidad ESPE
+              en una experiencia de videojuegos, tecnología y diversión.
+            </p>
+            <p class="text-info fw-semibold">
+              <span class="d-block d-lg-inline">📅 26-28 Oct 2027</span>
+              <span class="d-none d-lg-inline"> | </span>
+              <span class="d-block d-lg-inline">📍 Campus Belisario Quevedo</span>
+              <span class="d-none d-lg-inline"> | </span>
+              <span class="d-block d-lg-inline">🕘 09:00</span>
+            </p>
+            <a href="#inscripcion" class="btn btn-primary btn-lg border-danger text-uppercase fw-bold">Inscríbete ahora</a>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="card border-secondary rounded-5">
+              <!-- Imagen hero: agregar la ruta en src -->
+              <img src="img/equpamiento.jpg" alt="Teclado, audífonos y mando con iluminación RGB" class="card-img img-fluid rounded-5">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORÍAS (RF-03) ===================== -->
+    <section id="categorias" class="py-5">
+      <div class="container">
+        <h2 class="text-center text-uppercase fw-bold mb-1">Categorías de competencia</h2>
+        <p class="text-center text-body-secondary mb-4">Demuestra tu talento en tu juego favorito</p>
+
+        <div class="row row-cols-1 row-cols-lg-4 g-4">
+
+          <div class="col">
+            <article class="card h-100 border-info rounded-5 text-center">
+              <!-- Imagen FPS: agregar la ruta en src -->
+              <img src="img/FPS.jpg" alt="Imagen de la categoría FPS" class="card-img-top img-fluid rounded-top-5">
+              <div class="card-body">
+                <h3 class="card-title h5">FPS</h3>
+                <p class="card-subtitle text-info mb-2">Modalidad: por equipos</p>
+                <p class="card-text">Disparos en primera persona. Gana quien combina puntería con coordinación. Juegos: Call of Duty, Valorant.</p>
+                <button type="button" class="btn btn-outline-info btn-sm">Ver más</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 border-info rounded-5 text-center">
+              <!-- Imagen MOBA: agregar la ruta en src -->
+              <img src="img/MOBA.jpg" alt="Imagen de la categoría MOBA" class="card-img-top img-fluid rounded-top-5">
+              <div class="card-body">
+                <h3 class="card-title h5">MOBA</h3>
+                <p class="card-subtitle text-info mb-2">Modalidad: equipos 5 contra 5</p>
+                <p class="card-text">Estrategia en equipo, control del mapa y decisiones rápidas. Juegos: League of Legends, Dota 2.</p>
+                <button type="button" class="btn btn-outline-info btn-sm">Ver más</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 border-info rounded-5 text-center">
+              <!-- Imagen Battle Royale: agregar la ruta en src -->
+              <img src="img/BATTLE ROYALE.jpg" alt="Imagen de la categoría Battle Royale" class="card-img-top img-fluid rounded-top-5">
+              <div class="card-body">
+                <h3 class="card-title h5">Battle Royale</h3>
+                <p class="card-subtitle text-info mb-2">Modalidad: individual o dúos</p>
+                <p class="card-text">Se cae al mapa, se busca equipo y gana el último en pie. Juego: Fortnite.</p>
+                <button type="button" class="btn btn-outline-info btn-sm">Ver más</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 border-info rounded-5 text-center">
+              <!-- Imagen Fighting: agregar la ruta en src -->
+              <img src="img/FIGHTING.jpg" alt="Imagen de la categoría Fighting" class="card-img-top img-fluid rounded-top-5">
+              <div class="card-body">
+                <h3 class="card-title h5">Fighting</h3>
+                <p class="card-subtitle text-info mb-2">Modalidad: individual, eliminación directa</p>
+                <p class="card-text">Duelos uno contra uno donde mandan la técnica y los reflejos. Juego: Tekken 8.</p>
+                <button type="button" class="btn btn-outline-info btn-sm">Ver más</button>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  <!-- ===================== PREMIOS (RF-03) ===================== -->
+<section id="premios" class="bg-body-tertiary py-5">
+  <div class="container">
+    <h2 class="text-center text-uppercase fw-bold mb-4">Premios en juego</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 g-3">
+      <!-- 1.er lugar -->
+      <div class="col">
+        <article class="card h-100 border-danger rounded-4 text-center">
+          <div class="card-body d-flex flex-column">
+            <h3 class="h6 mb-3">🏆 1.er lugar: Audífonos gamer + Kit ESPE</h3>
+            <img src="img/audifonos_gamer.jpeg"
+                 alt="Audífonos gamer y Kit ESPE - Primer lugar"
+                 class="img-fluid rounded-3 mt-auto mx-auto"
+                 style="max-height: 160px; object-fit: contain;">
+          </div>
+        </article>
+      </div>
+
+      <!-- 2.º lugar -->
+      <div class="col">
+        <article class="card h-100 border-danger rounded-4 text-center">
+          <div class="card-body d-flex flex-column">
+            <h3 class="h6 mb-3">🥈 2.º lugar: Teclado mecánico + Merch ESPE</h3>
+            <img src="img/teclado.jpg"
+                 alt="Teclado mecánico y Merch ESPE - Segundo lugar"
+                 class="img-fluid rounded-3 mt-auto mx-auto"
+                 style="max-height: 160px; object-fit: contain;">
+          </div>
+        </article>
+      </div>
+
+      <!-- 3.er lugar -->
+      <div class="col">
+        <article class="card h-100 border-danger rounded-4 text-center">
+          <div class="card-body d-flex flex-column">
+            <h3 class="h6 mb-3">🥉 3.er lugar: Mouse gamer + Merch ESPE</h3>
+            <img src="img/mouse.jpg"
+                 alt="Mouse gamer y Merch ESPE - Tercer lugar"
+                 class="img-fluid rounded-3 mt-auto mx-auto"
+                 style="max-height: 160px; object-fit: contain;">
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <p class="text-center text-body-secondary small mt-3 mb-0">
+      Premios demostrativos. Se entregan a los tres primeros lugares de cada categoría y solo a participantes inscritos.
+    </p>
+  </div>
+</section>
+
+    <!-- ===================== AUSPICIANTES (RF-04) ===================== -->
+<section id="auspiciantes" class="py-5 bg-$gray-800">
+  <div class="container">
+    <h2 class="text-center text-uppercase fw-bold mb-1">Auspiciantes</h2>
+    <p class="text-center text-body-secondary mb-4">Logotipos demostrativos, auspiciantes simulados</p>
+
+    <div class="row row-cols-1 row-cols-lg-3 g-3 justify-content-center">
+      <!-- AUSPICIANTE 1: ASUS -->
+      <div class="col">
+        <div class="card h-100 border-secondary text-center">
+          <!-- Usamos flex-column para organizar imagen arriba y texto abajo -->
+          <div class="card-body d-flex flex-column justify-content-between">
+            <!-- Este div centraliza la imagen perfectamente -->
+            <div class="d-flex align-items-center justify-content-center" style="height: 120px;">
+              <img src="img/Asus-Logo.png" alt="Logotipo Asus" class="img-fluid" style="max-height: 150px; object-fit: contain;">
+            </div>
+            <p class="mb-0 fw-bold mt-2">Asus (Simulado)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AUSPICIANTE 2: LOGITECH -->
+      <div class="col">
+        <div class="card h-100 border-secondary text-center">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="d-flex align-items-center justify-content-center" style="height: 120px;">
+              <img src="img/logitech-logo.png" alt="Logotipo Logitech" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+            </div>
+            <p class="mb-0 fw-bold mt-2">Logitech (Simulado)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AUSPICIANTE 3: INTEL -->
+      <div class="col">
+        <div class="card h-100 border-secondary text-center">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div class="d-flex align-items-center justify-content-center" style="height: 120px;">
+              <img src="img/intel-logo.jpg" alt="Logotipo Intel" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+            </div>
+            <p class="mb-0 fw-bold mt-2">Intel (Simulado)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ===================== UBICACIÓN (RF-05) + INSCRIPCIÓN (RF-06 a RF-08) ===================== -->
+    <div class="bg-body-tertiary py-5">
+      <div class="container">
+        <div class="row g-5">
+
+          <section id="ubicacion" class="col-12 col-lg-6">
+            <h2 class="h4 text-uppercase fw-bold">Ubicación del evento</h2>
+            <p class="text-body-secondary">Campus Belisario Quevedo de la ESPE, Latacunga, Ecuador.</p>
+
+            <div class="card border-info rounded-5 overflow-hidden">
+              <div class="ratio ratio-4x3">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+                1d1653.0540209529515!2d-78.58493345297119!3d-0.9983154155823512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d4639e7c398d3f%3A0xc4999bdc40abfc48!2sUniversidad%20De%20Las%20Fuerzas%20Armadas%20ESPE%20Extensi%C3%B3n%20Belisario%20Quevedo!5e1!3m2!1ses-419!2sec!4v1793220353014!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+              </div>
+            </div>
+
+            <!-- Respaldo si el mapa no carga -->
+            <p class="small text-body-secondary mt-2 mb-0">
+              Si el mapa no carga, el evento se realiza en el Campus Belisario Quevedo de la ESPE, en Latacunga.
+              <a href="https://www.google.com/maps/search/?api=1&query=ESPE+Latacunga+Campus+Belisario+Quevedo"
+                 target="_blank" rel="noopener" class="link-info">Abrir en Google Maps</a>.
+            </p>
+          </section>
+
+          <section id="inscripcion" class="col-12 col-lg-6">
+            <h2 class="h4 text-uppercase fw-bold">Inscripción al evento</h2>
+
+            <!-- Formulario por definir (RF-06, RF-07, RF-08 y sección 3.3 del documento) -->
+            <div class="card border-secondary mt-3">
+              <div class="card-body">
+                <form id="formInscripcion" class="row g-3" novalidate>
+                  <!-- Campos por definir: cada campo en div.col-12.col-lg-6 para dos por fila en escritorio -->
+                </form>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER (RF-09) ===================== -->
+  <footer class="bg-black border-top border-secondary-subtle py-4">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center gap-3 text-center text-lg-start">
+        <div>
+          <p class="fw-bold mb-0">GAMER FEST ESPE 2027</p>
+          <p class="small text-body-secondary mb-0">© 2027 Gamer Fest ESPE. Caso de estudio académico.</p>
+        </div>
+        <div>
+          <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link link-info" href="https://www.instagram.com/gamerfest.ec/" target="_blank" rel="noopener noreferrer"">Instagram</a></li>
+            <li class="nav-item"><a class="nav-link link-info" href="https://www.facebook.com/gamerfest.ec/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (necesario para el menú colapsable) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
